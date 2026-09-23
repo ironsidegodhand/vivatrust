@@ -347,7 +347,7 @@ async function sendCustomerConfirmation(formData: MortgageFormData): Promise<Ema
               </div>
               <div class="footer">
                 <p>VivaTrust Bank</p>
-                <p>Customer Service: +18632811748</p>
+                <p>Customer Service: +16815054209</p>
                 <p>© 2024 VivaTrust Bank. All rights reserved.</p>
               </div>
             </div>

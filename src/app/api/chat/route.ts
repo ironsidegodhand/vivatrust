@@ -47,7 +47,7 @@ const DIRECT_RESPONSES = [
   },
   {
     patterns: [/close.*account/i],
-    response: "To close your account, please visit support page or ontact agent via WhatsApp +18632811748. We'll help you through the process."
+    response: "To close your account, please visit support page or ontact agent via WhatsApp +16815054209. We'll help you through the process."
   },
 
   // === MONEY & TRANSFERS ===
@@ -111,7 +111,7 @@ const DIRECT_RESPONSES = [
   },
   {
     patterns: [/card blocked|lost card/i],
-    response: "If your card is lost or blocked, freeze it immediately from the app or WhatsApp +18632811748 for support."
+    response: "If your card is lost or blocked, freeze it immediately from the app or WhatsApp +16815054209 for support."
   },
   {
     patterns: [/card limit|spending limit/i],
@@ -205,11 +205,11 @@ const DIRECT_RESPONSES = [
   // === CUSTOMER SUPPORT ===
   {
     patterns: [/contact|support|help|talk to someone/i],
-    response: "Our support team is available 24/7 at support page or via WhatsApp +18632811748."
+    response: "Our support team is available 24/7 at support page or via WhatsApp +16815054209."
   },
   {
     patterns: [/complaint|feedback/i],
-    response: "We're sorry to hear that! Please send your complaint or feedback to goldmanbankmail@gmail.com."
+    response: "We're sorry to hear that! Please send your complaint or feedback to vivatrustbank@gmail.com."
   },
 
   // === GREETINGS & SMALL TALK ===
@@ -354,7 +354,7 @@ const DIRECT_RESPONSES = [
   { patterns: [/change address/i], response: "You can update your address in 'Profile' → 'Personal Information'." },
   { patterns: [/update details/i], response: "You can update your phone, address, or email anytime in your profile settings." },
   { patterns: [/open business account/i], response: "Open a business account online in 10 minutes. You'll need your company registration number and ID." },
-  { patterns: [/close business account/i], response: "To close your business account, please contact business support at goldmanbankmail@gmail.com." },
+  { patterns: [/close business account/i], response: "To close your business account, please contact business support at vivatrustbank@gmail.com." },
   { patterns: [/company verification/i], response: "Business accounts require company registration, tax ID, and proof of address." },
   { patterns: [/invoice|billing/i], response: "You can create and send invoices directly from your business dashboard." },
   { patterns: [/payment link/i], response: "Generate payment links instantly in your business account to receive payments easily." },
@@ -398,7 +398,7 @@ const DIRECT_RESPONSES = [
   { patterns: [/atm nearby/i], response: "Find the nearest VivaTrust Bank ATM in your app under 'ATM Locator'." },
   { patterns: [/supported countries/i], response: "We currently operate in over 40 countries worldwide." },
   { patterns: [/currency supported/i], response: "We support USD, EUR, GBP, and several local currencies." },
-  { patterns: [/contact ceo|manager/i], response: "For executive inquiries, please email goldmanbankmail@gmail.com" },
+  { patterns: [/contact ceo|manager/i], response: "For executive inquiries, please email vivatrustbank@gmail.com" },
   { patterns: [/bank license|regulated/i], response: "Yes, VivaTrust Bank is a fully licensed and regulated financial institution." },
   { patterns: [/terms|privacy policy/i], response: "You can view our terms and privacy policy at VivaTrust Bank.com/legal." },
   { patterns: [/fees|charges/i], response: "Our fee schedule is transparent and listed under 'Pricing' in your dashboard." },

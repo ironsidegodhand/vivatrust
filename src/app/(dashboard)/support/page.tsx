@@ -66,7 +66,7 @@ const page = () => {
                 </h2>
               </div>
           </form>
-          <Link href={"https://wa.me/+18632811748"} target="_blank">
+          <Link href={"https://wa.me/+16815054209"} target="_blank">
             <button className='bg-blue-400 flex w-full h-[5rem]  cursor-pointer justify-center items-center gap-3 rounded-[10px]'>
               <p className='font-extrabold'>WhatsApp</p>
               <SiWhatsapp className='text-3xl' />
