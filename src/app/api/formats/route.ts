@@ -3,11 +3,6 @@ import { getAuth } from '@clerk/nextjs/server';
 import connectMongoDB from '@/lib/mongodb';
 import Format from '@/models/Format';
 
-const ADMIN_USER_IDS = new Set([
-  'user_3Jdv3d9fKd7gUbp5tADLNGSDmq0',
-  'user_3Jh2qAO7zznoASKIddNA2uD4ZCQ',
-]);
-
 // import { initializeUserFormats } from '@/lib/initFormats';
 
 export async function GET(request: NextRequest) {
@@ -47,10 +42,6 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: 'Unauthorized' }, { status: 401 });
     }
 
-    if (!ADMIN_USER_IDS.has(userId)) {
-      return NextResponse.json({ error: 'Forbidden' }, { status: 403 });
-    }
-
     const { id, title, description, type } = await request.json();
 
     if (!title || !description || !type) {
@@ -63,7 +54,7 @@ export async function POST(request: NextRequest) {
     let format;
     
     if (id) {
-      // Billing formats are shared between the authorized administrators.
+      // Billing formats are shared, so any signed-in user can update an existing one.
       format = await Format.findOneAndUpdate(
         { _id: id },
         { title, description, type },
