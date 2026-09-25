@@ -54,16 +54,16 @@ export async function POST(request: NextRequest) {
     let format;
     
     if (id) {
-      // Update existing format
+      // Billing formats are shared, so any signed-in user can update an existing one.
       format = await Format.findOneAndUpdate(
-        { _id: id, clerkId: userId },
+        { _id: id },
         { title, description, type },
         { new: true, runValidators: true }
       );
 
       if (!format) {
         return NextResponse.json(
-          { error: 'Format not found or access denied' },
+          { error: 'Format not found' },
           { status: 404 }
         );
       }

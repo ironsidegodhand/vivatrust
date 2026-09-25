@@ -57,8 +57,8 @@ export default function KycBanner() {
     }
   };
 
-  // Don't show if loading or pending
-  if (loading || kycStatus.status === 'pending') {
+  // Wait until the user's KYC status has been fetched before showing the banner.
+  if (loading) {
     return null;
   }
 
@@ -85,18 +85,27 @@ export default function KycBanner() {
                 <p className='items-center'>Your account number: <strong className='text-3xl'>{kycStatus.account || 'Loading...'}</strong></p>
                 <p>You can now use all features of your account.</p>
               </>
+            ) : kycStatus.status === 'pending' ? (
+              <>
+                <h1>Your KYC Request Is Being Reviewed 🕒</h1>
+                <p>We have received your application. An administrator is reviewing it and will update your status once a decision has been made.</p>
+              </>
             ) : (
               <>
                 <h1>KYC Application Declined ❌</h1>
                 <p>{kycStatus.message || 'Your KYC application was not approved. Please review and reapply.'}</p>
               </>
             )}
-            <Link href={kycStatus.status === 'approved' ? "/dashboard" : (kycStatus.status === 'not_submitted' ? "/kyc" : "/reapply")}>
-              <button>
-                {kycStatus.status === 'approved' ? 'Completed' : 
-                 kycStatus.status === 'not_submitted' ? 'Get Started' : 'Reapply Now'}
-              </button>
-            </Link>
+            {kycStatus.status === 'pending' ? (
+              <button type="button" disabled aria-disabled="true">Review in Progress</button>
+            ) : (
+              <Link href={kycStatus.status === 'approved' ? "/dashboard" : (kycStatus.status === 'not_submitted' ? "/kyc" : "/reapply")}>
+                <button>
+                  {kycStatus.status === 'approved' ? 'Completed' :
+                   kycStatus.status === 'not_submitted' ? 'Get Started' : 'Reapply Now'}
+                </button>
+              </Link>
+            )}
           </div>
         </div>
         <Image 

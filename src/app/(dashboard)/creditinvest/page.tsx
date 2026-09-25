@@ -89,7 +89,7 @@ const page = () => {
               <div className="recipient">
                 <span className='flex items-center gap-1.5'>
                   <FiUser /> 
-                  <h2>Credit Imvestment Balance</h2>
+                  <h2>Credit Investment Balance</h2>
                 </span>
                 <div className="receipt">
                   <div className="receipt-content">
