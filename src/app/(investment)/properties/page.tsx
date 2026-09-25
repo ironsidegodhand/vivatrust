@@ -199,7 +199,7 @@ const BuyProperty = () => {
             <p>You're interested in: <strong>{selectedProperty.name}</strong></p>
             <div className="modal-actions">
               <button onClick={() => setSelectedProperty(null)}>Cancel</button>
-              <Link href={"https://wa.me/+16815054209"} target="_blank">
+              <Link href={"https://wa.me/+12253771715"} target="_blank">
                 <button className="primary">Contact Agent</button>
               </Link>
             </div>

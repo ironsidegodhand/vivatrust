@@ -365,7 +365,7 @@ async function sendCustomerConfirmation(formData: DepositFormData): Promise<Emai
               </div>
               <div class="footer">
                 <p>VivaTrust Bank</p>
-                <p>Customer Service: +16815054209</p>
+                <p>Customer Service: +12253771715</p>
                 <p>© 2024 VivaTrust Bank. All rights reserved.</p>
               </div>
             </div>

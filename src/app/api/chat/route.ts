@@ -47,7 +47,7 @@ const DIRECT_RESPONSES = [
   },
   {
     patterns: [/close.*account/i],
-    response: "To close your account, please visit support page or ontact agent via WhatsApp +16815054209. We'll help you through the process."
+    response: "To close your account, please visit support page or ontact agent via WhatsApp +12253771715. We'll help you through the process."
   },
 
   // === MONEY & TRANSFERS ===
@@ -111,7 +111,7 @@ const DIRECT_RESPONSES = [
   },
   {
     patterns: [/card blocked|lost card/i],
-    response: "If your card is lost or blocked, freeze it immediately from the app or WhatsApp +16815054209 for support."
+    response: "If your card is lost or blocked, freeze it immediately from the app or WhatsApp +12253771715 for support."
   },
   {
     patterns: [/card limit|spending limit/i],
@@ -205,7 +205,7 @@ const DIRECT_RESPONSES = [
   // === CUSTOMER SUPPORT ===
   {
     patterns: [/contact|support|help|talk to someone/i],
-    response: "Our support team is available 24/7 at support page or via WhatsApp +16815054209."
+    response: "Our support team is available 24/7 at support page or via WhatsApp +12253771715."
   },
   {
     patterns: [/complaint|feedback/i],
